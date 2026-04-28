@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selin Erdal | Portfolio CV</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Manrope',sans-serif;
+background:#faf8f7;
+color:#2d1f2f;
+padding:30px;
+}
+
+h1,h2,h3,h4,.pill,.footer,.year{
+font-family:'Outfit',sans-serif;
+}
+
+.page{
+max-width:1150px;
+margin:auto;
+background:#fffdfc;
+border:2px solid #eadde3;
+border-radius:38px;
+padding:42px;
+box-shadow:0 25px 70px rgba(168,85,123,0.12);
+}
+
+.top-line{
+height:8px;
+border-radius:999px;
+background:linear-gradient(90deg,#a8557b,#e7bfd0);
+margin-bottom:35px;
+}
+
+.hero{
+display:grid;
+grid-template-columns:38% 62%;
+gap:40px;
+align-items:center;
+}
+
+.photo-box{
+min-height:380px;
+border-radius:34px;
+overflow:hidden;
+background:#f3d7e3;
+border:2px solid #eadde3;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+font-weight:700;
+color:#a8557b;
+}
+
+.photo-box img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.hello{
+font-size:70px;
+line-height:.9;
+color:#a8557b;
+font-weight:700;
+}
+
+.name{
+font-size:84px;
+line-height:.9;
+font-weight:800;
+letter-spacing:-3px;
+margin:8px 0 20px;
+}
+
+.subtitle{
+font-size:18px;
+line-height:1.7;
+max-width:560px;
+color:#544255;
+margin-bottom:25px;
+}
+
+.pill-row{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.pill{
+padding:10px 16px;
+border-radius:999px;
+background:#fff7fa;
+border:1px solid #e6c9d6;
+color:#a8557b;
+font-size:14px;
+font-weight:700;
+}
+
+.content-grid{
+display:grid;
+grid-template-columns:38% 62%;
+gap:40px;
+margin-top:35px;
+}
+
+.card{
+background:#ffffff;
+border:1px solid #eadde3;
+border-radius:28px;
+padding:24px;
+margin-bottom:24px;
+box-shadow:0 10px 24px rgba(168,85,123,0.06);
+}
+
+.card h3,
+.section-title{
+color:#a8557b;
+font-size:24px;
+margin-bottom:15px;
+}
+
+.contact-item{
+margin-bottom:12px;
+font-size:16px;
+line-height:1.5;
+}
+
+a{
+color:#a8557b;
+text-decoration:none;
+font-weight:700;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+.skill-list{
+list-style:none;
+}
+
+.skill-list li{
+margin-bottom:10px;
+padding-left:18px;
+position:relative;
+font-weight:600;
+}
+
+.skill-list li::before{
+content:"♡";
+position:absolute;
+left:0;
+color:#a8557b;
+}
+
+.lang-row{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:6px;
+font-weight:700;
+color:#463447;
+}
+
+.level{
+font-size:14px;
+font-weight:600;
+color:#b89aaa;
+letter-spacing:0.4px;
+}
+
+.bar{
+height:12px;
+background:#f3d7e3;
+border-radius:999px;
+margin:7px 0 16px;
+overflow:hidden;
+}
+
+.bar-fill{
+height:100%;
+border-radius:999px;
+background:linear-gradient(90deg,#a8557b,#d88aaa);
+}
+
+.section-title{
+font-size:32px;
+margin:35px 0 16px;
+padding-bottom:8px;
+border-bottom:2px solid #eadde3;
+}
+
+p{
+line-height:1.75;
+font-size:16px;
+color:#544255;
+}
+
+.timeline-item{
+border-left:3px solid #e6c9d6;
+padding-left:22px;
+margin-bottom:28px;
+position:relative;
+}
+
+.timeline-item::before{
+content:"";
+width:14px;
+height:14px;
+border-radius:50%;
+background:#a8557b;
+border:4px solid #f3d7e3;
+position:absolute;
+left:-10px;
+top:4px;
+}
+
+.year{
+font-size:19px;
+font-weight:800;
+color:#a8557b;
+margin-bottom:4px;
+display:block;
+}
+
+.timeline-item h4{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.big-box{
+background:#a8557b;
+padding:28px;
+border-radius:30px;
+margin-top:18px;
+box-shadow:0 18px 40px rgba(168,85,123,0.18);
+}
+
+.big-box h3,
+.big-box p,
+.big-box h4,
+.big-box .year{
+color:white;
+}
+
+.big-box .timeline-item{
+border-left-color:#f3d7e3;
+}
+
+.big-box .timeline-item::before{
+background:white;
+border-color:#f3d7e3;
+}
+
+.projects{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+}
+
+.project{
+background:white;
+border:1px solid #eadde3;
+border-radius:24px;
+padding:20px;
+box-shadow:0 10px 24px rgba(168,85,123,0.06);
+}
+
+.project h4{
+color:#a8557b;
+margin-bottom:8px;
+font-size:20px;
+}
+
+.footer{
+display:block;
+margin-top:40px;
+padding:24px;
+border-radius:30px;
+text-align:center;
+font-size:30px;
+font-weight:800;
+background:linear-gradient(90deg,#a8557b,#d88aaa);
+color:white;
+text-decoration:none;
+transition:0.25s ease;
+cursor:pointer;
+}
+
+.footer:hover{
+transform:translateY(-3px);
+box-shadow:0 14px 30px rgba(168,85,123,0.22);
+text-decoration:none;
+}
+
+@media(max-width:900px){
+
+body{
+padding:0;
+}
+
+.page{
+border-radius:0;
+padding:24px;
+}
+
+.hero,
+.content-grid,
+.projects{
+grid-template-columns:1fr;
+}
+
+.name{
+font-size:58px;
+}
+
+.hello{
+font-size:48px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<main class="page">
+
+<div class="top-line"></div>
+
+<section class="hero">
+
+<div class="photo-box">
+PHOTO HERE
+<!-- fotoğraf eklemek için:
+<img src="photo.jpg" alt="Profile photo">
+-->
+</div>
+
+<div>
+<h1 class="hello">Hello.</h1>
+<h2 class="name">Selin Erdal</h2>
+
+<p class="subtitle">
+German Language & Literature student with strong communication skills, retail experience, and growing expertise in design tools and front-end basics. Passionate about creative work, branding, digital marketing, and user-focused design.
+</p>
+
+<div class="pill-row">
+<span class="pill">Creative</span>
+<span class="pill">Detail-Oriented</span>
+<span class="pill">Fast Learner</span>
+<span class="pill">Relocation Open</span>
+<span class="pill">Design Focused</span>
+</div>
+</div>
+
+</section>
+
+<section class="content-grid">
+
+<aside>
+
+<div class="card">
+<h3>Contact</h3>
+<div class="contact-item">📍 Ankara, Türkiye (Open to Relocation)</div>
+<div class="contact-item">✉️ selinerdal.se@gmail.com</div>
+<div class="contact-item">🔗 <a href="https://www.linkedin.com/in/selin-erdal/" target="_blank">LinkedIn Profile</a></div>
+</div>
+
+<div class="card">
+<h3>Design Tools</h3>
+<ul class="skill-list">
+<li>Canva</li>
+<li>Adobe Photoshop</li>
+<li>Adobe Illustrator</li>
+<li>Figma</li>
+<li>Visual Studio Code</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Languages</h3>
+
+<div class="lang-row">
+<span>Turkish</span>
+<span class="level">Native</span>
+</div>
+<div class="bar"><div class="bar-fill" style="width:100%"></div></div>
+
+<div class="lang-row">
+<span>English</span>
+<span class="level">C2</span>
+</div>
+<div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+
+<div class="lang-row">
+<span>German</span>
+<span class="level">B2</span>
+</div>
+<div class="bar"><div class="bar-fill" style="width:75%"></div></div>
+
+</div>
+
+<div class="card">
+<h3>Skills</h3>
+<ul class="skill-list">
+<li>Communication</li>
+<li>Customer Service</li>
+<li>Attention to Detail</li>
+<li>Adaptability</li>
+<li>Team Collaboration</li>
+<li>HTML / CSS Basics</li>
+</ul>
+</div>
+
+</aside>
+
+<section>
+
+<h3 class="section-title">About Me</h3>
+<p>
+I am a motivated university student with a creative mindset and hands-on experience in customer-facing environments. I enjoy combining communication, aesthetics, and functionality in projects related to design, branding, and digital experiences.
+</p>
+
+<h3 class="section-title">Education</h3>
+
+<div class="timeline-item">
+<span class="year">2022 - Present</span>
+<h4>Ankara University</h4>
+<p>German Language & Literature</p>
+</div>
+
+<div class="timeline-item">
+<span class="year">2018 - 2019</span>
+<h4>Baskent University</h4>
+<p>Business Administration</p>
+</div>
+
+<h3 class="section-title">Experience</h3>
+
+<div class="big-box">
+
+<div class="timeline-item">
+<span class="year">Dec 2022 - Sep 2025</span>
+<h4>Retail Sales Associate – Oysho</h4>
+<p>
+Managed cashier operations, assisted customers, maintained store organization, and delivered strong customer service in a fast-paced retail environment.
+</p>
+</div>
+
+</div>
+
+<h3 class="section-title">Projects</h3>
+
+<div class="projects">
+
+<div class="project">
+<h4>Personal Portfolio Website</h4>
+<p>Designed and coded a responsive personal CV website using HTML and CSS.</p>
+</div>
+
+<div class="project">
+<h4>Design Portfolio</h4>
+<p>Visual concepts, layouts, branding ideas, and social media designs created with design tools.</p>
+</div>
+
+<div class="project">
+<h4>Future UI/UX Work</h4>
+<p>Planned interface concepts and user-focused digital design studies.</p>
+</div>
+
+<div class="project">
+<h4>Creative Marketing Concepts</h4>
+<p>Conceptual campaign and branding ideas for digital products.</p>
+</div>
+
+</div>
+
+</section>
+
+</section>
+
+<a class="footer" href="https://www.linkedin.com/in/selin-erdal/" target="_blank">
+Let's Work Together
+</a>
+
+</main>
+
+</body>
+</html>
